@@ -1,0 +1,28 @@
+<%- layout('layouts/boilerplate') %>
+
+<%- include('../partials/flash') %>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <form action="/register" method="post">
+            <h1 class="display-6">Sign Up</h1>
+            <div class="mb-3">
+                <label class="form-label" for="username" >Username</label>
+                <input class="form-control" type="text" name="username" id="username" placeholder="Username">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password">
+            </div>
+
+            <button type="submit" class="btn btn-success btn-small">SignUp</button>
+        </form>
+    </div>
+</div>
